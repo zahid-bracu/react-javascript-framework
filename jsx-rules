@@ -1,0 +1,6 @@
+1. return single elements
+2. div / section / article or Fragment
+3. use camelCase for html atribute
+4. className instead of className
+5. close every elements
+6. formatting

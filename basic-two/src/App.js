@@ -12,6 +12,7 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import AddedItem from './components/AddedItem';
 
 
 
@@ -19,12 +20,12 @@ function App() {
   return (
     <div className="App">
       
-      <Navigation/>
+      
        
 
       {/* router */}
       <Router>
-
+      <Navigation/>
         {/* switch */}
         <Switch>
 
@@ -37,6 +38,11 @@ function App() {
           
           <Route path="/home">
             <Home></Home>
+          </Route>
+
+
+          <Route path="/addedItems">
+            <AddedItem/>
           </Route>
 
           {/* default path */}
