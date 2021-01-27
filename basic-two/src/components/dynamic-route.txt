@@ -1,0 +1,21 @@
+component.js...inside it ..
+
+import {Link} from "react-router-dom";
+<Link to={`/about/${id}`}>
+	Go to About
+</Link>
+
+-----------------------------------------
+
+app.js... inside switch:-->
+
+<Route path="/about/:id">
+	<About/>
+</Route>
+
+--------------------------------------
+
+about.js...inside it:-->
+
+import { useParams } from "react-router-dom";
+const {id} =useParams();

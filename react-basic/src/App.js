@@ -2,6 +2,9 @@ import logo from './logo.svg';
 import './App.css';
 import PageOne from './components/PageOne'; //importing a component
 import PageTwo from './components/PageTwo'; //importing a component
+import Count from './components/Count';
+import DataLoad from './components/DataLoad';
+import cpscm from './components/image/cpscm.jpg' //importing jpg logo
 
 function App() {
   // variable
@@ -23,7 +26,14 @@ function App() {
   // main part
   return (
     <div className="App">
+      <div>
+        {/* load the jpg image */}
+        <img style={{width:"100px"}} src={cpscm}/>
+      </div>
+      <Count/>
 
+
+      <h2 style={{color:"blue"}}>Mathmetical Result: {2*3+4}</h2>
 
       {/*  css style object   & variable value  */}
       <h2 style={style}>{sentece}</h2>
@@ -41,7 +51,7 @@ function App() {
       {/* other component from another folder is imported */}
       <PageTwo/>
       <PageOne/>
-      
+      <DataLoad/>
     </div>
   );
 }
@@ -49,7 +59,7 @@ function App() {
 
 function Components(props){
 
-  // props pringint
+  // props printing
   console.log(props)
   const style={
     border:"1px solid black",

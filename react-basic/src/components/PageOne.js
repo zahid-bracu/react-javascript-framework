@@ -2,7 +2,12 @@ import React from 'react';
 
 const PageOne = () => {
 
-    // array of object
+    //variable to pass the propes value
+    var value="Testing props passing"
+    
+    
+    
+    // array of object to pass through the props
     var arrayObject=[
         {
             id:1,
@@ -16,12 +21,28 @@ const PageOne = () => {
     
     return (
         <div>
+            {/* function to pass the props : props passing test */}
+            <TestProps value={value} />
+
+
+
+
             {   // array of object sending to components dynamically
                 arrayObject.map(key=> <Internal data={key}></Internal>)
             }
         </div>
     );
 };
+
+
+function TestProps(props){
+// function to test props passing
+    return(
+        <div>
+            <h2>{props.value}</h2>
+        </div>
+    )
+}
 
 
 function Internal(props){
