@@ -8,10 +8,14 @@ import Total from './Total';
 //importing database manager
 import {addToDatabaseCart, getDatabaseCart} from './utilities/databaseManager';
 
+import {
+    Link
+  } from "react-router-dom";
+
 const DataLoad = () => {
 
-    //key value saving
-    const [keys,setKeys]=useState([]);
+    //selected item value saving
+    const [selectedItem,setSelectedItem]=useState([]);
 
     // slicing the own data to 10 item
     var loadedData=ownData.slice(0,10);
@@ -21,47 +25,58 @@ const DataLoad = () => {
 
 
     useEffect(()=>{
-        var data=getDatabaseCart();    
-        console.log(Object.values(data)) 
-        var item_keys=Object.keys(data);
-        console.log(item_keys);
+        var savedDatas=getDatabaseCart();
+        const dataKeys=Object.keys(savedDatas);
+        const previousData=dataKeys.map(iterator=>{
+            const item=ownData.find(id=> id.key===iterator);
+            item.count=savedDatas[iterator];
+            return item;
+        })
 
-         
-
-        // const added_items=item_keys.map(key=>{
-        //     const item=ownData.find(id=> id.key==key);
-        //     item.count=data[key];
-            
-        //     return item.key;
-        // })
-
-        // setdata(added_items);
-
+        console.log(previousData);
+        setSelectedItem(previousData);
     },[])
 
+
     // a function to send through prop
-    function  testFunc(key){
-        console.log("Clicked Once");
-        console.log(key);
-        
-        // saving in the use-state with the old data using spread operator
-        var newKeys=[...keys,key];
-
-        //checking how many times same items has been clicked
-        var prod=newKeys.filter(id=> id==key)
-
-        // saving into database manager
-        addToDatabaseCart(key,prod.length);
-        setKeys(newKeys);
+    function  testFunc(item){
+        const itemToBeAdded=item.key;
+        const sameProduct=selectedItem.find(pd=> pd.key===itemToBeAdded);
+        let count=1;
+        let newItem;
+        if(sameProduct){
+            count=sameProduct.count+1;
+            sameProduct.count=count;
+            const others=selectedItem.filter(it=>it.key !== itemToBeAdded);
+            newItem=[...others, sameProduct];
+        }else{
+            item.count=1;
+            newItem=[...selectedItem,item];
+        }
+        setSelectedItem(newItem);
+        addToDatabaseCart(item.key,count);
     }
 
-    console.log(keys)
+    console.log(selectedItem)
 
+    var total=selectedItem.reduce((sum,id)=>{
+        sum=sum+id.count;
+        return sum;
+    },0)
+    console.log(total);
     return (
         <>
         {/* keys value are passing using props  */}
         <div>
-            <Total keys={keys}/>
+            {/* shared components in multiple items */}
+            <Total keys={total}>
+                <Link to="/addedItems">
+                    <button>
+                        Review Items
+                    </button>
+                </Link>
+                
+            </Total>
         </div>
 
         <div>

@@ -55,7 +55,7 @@ const Info = (props) => {
 
                             {/* props function is used */}
                             {/* event handler button to show and hide values in render */}
-                            <button onClick={()=>testFunc(key)}>Add</button>
+                            <button onClick={()=>testFunc(props.datas)}>Add</button>
                             <button onClick={()=>showKey(key)}>Show Key</button>
                             <button onClick={()=>removeKey()}>Remove Key</button>
                             

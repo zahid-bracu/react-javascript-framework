@@ -7,7 +7,7 @@ const AddedItemDetail = (props) => {
                 <h5>Name : {name}</h5>
                 <h5>Author/Director : {author} {Director}</h5>
                 <h5>Total Ordered : {count}</h5>
-                <button>Remove</button>
+                <button onClick={()=>props.remove(key)}>Remove</button>
         </div>
     );
 };
