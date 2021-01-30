@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useContext } from 'react';
 //importing Info component
 import Info from './Info';
 // loading the own data
@@ -8,11 +8,18 @@ import Total from './Total';
 //importing database manager
 import {addToDatabaseCart, getDatabaseCart} from './utilities/databaseManager';
 
+import {CategoryContext} from '../App';
+
+
 import {
     Link
   } from "react-router-dom";
 
-const DataLoad = () => {
+const DataLoad = (props) => {
+
+    const [category,setCategory]=useContext(CategoryContext);
+    
+    const {state,setState}=props;
 
     //selected item value saving
     const [selectedItem,setSelectedItem]=useState([]);
@@ -66,6 +73,22 @@ const DataLoad = () => {
     console.log(total);
     return (
         <>
+        <div>
+
+            <h2>Shared use-state in multiple component</h2>
+
+            <button className="mt-5" onClick={()=>setState(state+1)}>Increase</button>
+            <button className="mb-5" onClick={()=>setState(state-1)}>Decrease</button>
+            
+        </div>
+
+        <div className="my-4">
+            <h3>Set Your Category</h3>
+            <button className="ml-2" onClick={()=>{setCategory("books")}}>Set catagory : Books</button>
+            <button className="ml-2" onClick={()=>{setCategory("movies")}}>Set category : Movies</button>
+            <button className="ml-2" onClick={()=>{setCategory("")}}>clear category</button>
+        </div>
+        
         {/* keys value are passing using props  */}
         <div>
             {/* shared components in multiple items */}

@@ -1,0 +1,23 @@
+----------------------------------------------------------
+****parent file****
+
+import {createContext} from 'react';
+
+export const UserContext = React.createContext();
+
+const [user,setUser]=useState();
+
+
+<UserContext.Provider value={[user,setUser]}>
+.........
+</UserContext.Provider>
+
+
+-----------------------------------------------------------
+****child file*****
+
+import React, {useState,useContext} from 'react';
+import {UserContext} from '../App';
+
+
+const [user,setUser]=useContext(UserContext);

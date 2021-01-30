@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState, useContext } from 'react';
 import netflix from './image/netflix.png' //importing image
 import './style.css' // importing css file
 import {
@@ -8,7 +8,13 @@ import {
     Link
   } from "react-router-dom";
 
-const Navigation = () => {
+  
+import {CategoryContext} from '../App';
+
+const Navigation = (props) => {
+    const {state}=props;
+
+    const [category,setCategory]=useContext(CategoryContext);
     return (
         <div>
             
@@ -21,6 +27,8 @@ const Navigation = () => {
             <Link style={{margin:"20px 10px"}} to="/home">Home</Link>
             <Link style={{margin:"20px 10px"}} to="/Item">Item</Link>
             <Link style={{margin:"20px 10px"}} to="/addedItems">Added Items</Link>
+            <span style={{margin:"20px 10px"}}>State Value : {state}</span>
+            <span style={{margin:"20px 10px"}}>Category Value: {category}</span>
         </div>
     );
 };

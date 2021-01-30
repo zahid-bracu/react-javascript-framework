@@ -1,9 +1,16 @@
+//importing react + use-state + create-context for context api
+import  React, {useState, createContext} from 'react'
+//import css file
 import './App.css';
+
+//importing components
 import Navigation from './components/Navigation';
 import DataLoad from './components/DataLoad';
 import Home from './components/Home';
 import Notfound from './components/Notfound';
 import Detail from './components/Detail';
+import AddedItem from './components/AddedItem';
+
 
 //importing react router 
 import {
@@ -12,26 +19,27 @@ import {
   Route,
   Link
 } from "react-router-dom";
-import AddedItem from './components/AddedItem';
 
 
+export const CategoryContext = React.createContext();
 
 function App() {
-  return (
-    <div className="App">
-      
-      
-       
+  const [state,setState]=useState(0)
+  const [category,setCategory]=useState();
 
+
+  return (
+    <CategoryContext.Provider value={[category,setCategory]}>
+    <div className="App">
       {/* router */}
       <Router>
-      <Navigation/>
+      <Navigation state={state}/>
         {/* switch */}
         <Switch>
 
           {/* path & router */}
           <Route path="/item">
-            <DataLoad></DataLoad>
+            <DataLoad state={state} setState={setState}></DataLoad>
           </Route>
 
 
@@ -66,6 +74,7 @@ function App() {
         </Switch>
       </Router>
     </div>
+    </CategoryContext.Provider>
   );
 }
 
