@@ -9,7 +9,8 @@ import AddedItemDetail from './AddedItemDetail';
 import Total from './Total';
 // importing react router
 import {
-    Link
+    Link,
+    useHistory
   } from "react-router-dom";
 
 const AddedItem = () => {
@@ -83,6 +84,16 @@ const AddedItem = () => {
     }
 
 
+    var history=useHistory();
+    function action() {
+        console.log(history);
+        history.goBack();
+    }
+
+    function push() {
+        history.replace("/Item")        
+    }
+
     return (
         <>
             {/* shared component in multiple items */}
@@ -98,6 +109,8 @@ const AddedItem = () => {
             {
               flag && <h1>Your Order has been placed</h1>
             }
+            <button onClick={()=>action()}>Go Back</button>
+            <button onClick={()=>push()}>Items</button>
         </>
     );
 };

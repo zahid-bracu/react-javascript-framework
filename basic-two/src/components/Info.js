@@ -9,19 +9,18 @@ const Info = (props) => {
 
    
 
+    // alter for contional render
     const {alter}=props;
-    // destructuring the props dynamic data values from array of objects
-    var {key, name, author, Director}=props.datas;
 
-     
+    // destructuring the props dynamic data values from array of objects
+    var {key, name, author, Director}=props.datas; 
 
     //destructuring the function that is passed by props
     const testFunc=props.testFunc;
 
-
-
      // a state to show/hide value and vice - versa
      const [Key,setKey]=useState(); 
+
     // a event handler function to show value
     function showKey(value) {
         setKey(value);
@@ -41,6 +40,7 @@ const Info = (props) => {
               <h5>{Key}</h5>
 
               {
+                //   alter for conditional render
                   !alter && <>
                             <h5>Key: {key}</h5>
                   </>

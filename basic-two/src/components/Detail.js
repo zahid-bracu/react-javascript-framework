@@ -1,9 +1,17 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
+
+// dynamic value pass : use-params
+import { useParams, useLocation } from 'react-router-dom';
 import Info from './Info';
 import ownData from './ownData';
 
 function Detail(){
+
+    // use-location to get the location
+    // it's a object
+    const location=useLocation();
+    
+    
 
     // destructure from use-params hooks
     const {key} =useParams();
@@ -16,6 +24,10 @@ function Detail(){
         <>
         {/* a conditional render value is sent to the child class to show a button and hide other button */}
         <Info alter={false} datas={info}/>
+
+        {/* pathname & key of location */}
+        <h3> Path: <span style={{color:"red"}}>{location.pathname}</span></h3>
+        <h3>Key: <span style={{color:"red"}}>{location.key}</span></h3>
         </>
     );
 };

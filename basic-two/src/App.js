@@ -19,6 +19,8 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import Test from './components/Test';
+import Contact from './components/Contact';
 
 
 export const CategoryContext = React.createContext();
@@ -46,6 +48,16 @@ function App() {
           
           <Route path="/home">
             <Home></Home>
+          </Route>
+
+
+          <Route path="/test">
+            <Test></Test>
+          </Route>
+
+
+          <Route path="/contact">
+            <Contact/>
           </Route>
 
 
