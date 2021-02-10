@@ -21,6 +21,10 @@ import {
 } from "react-router-dom";
 import Test from './components/Test';
 import Contact from './components/Contact';
+import Somewhere from './components/Somewhere';
+import SubmittedInfo from './components/SubmittedInfo';
+import User from './components/User';
+import RandomUser from './components/RandomUser';
 
 
 export const CategoryContext = React.createContext();
@@ -51,6 +55,21 @@ function App() {
           </Route>
 
 
+          <Route path="/random">
+            <RandomUser/>
+          </Route>
+
+
+          <Route path="/submit">
+            <SubmittedInfo/>
+          </Route>
+
+
+          <Route path="/user">
+            <User/>
+          </Route>
+
+
           <Route path="/test">
             <Test></Test>
           </Route>
@@ -63,6 +82,11 @@ function App() {
 
           <Route path="/addedItems">
             <AddedItem/>
+          </Route>
+
+
+          <Route path="/somewhere">
+            <Somewhere/>
           </Route>
 
           {/* default path */}

@@ -1,9 +1,7 @@
 import React, {useEffect} from 'react';
 import './style.css'; //importing css style file
 import home from './image/home.jpg' //importing image file
-import {
-    Location, useLocation
-} from 'react-router-dom';
+
 const Home = () => {
 
     //  scroll to top

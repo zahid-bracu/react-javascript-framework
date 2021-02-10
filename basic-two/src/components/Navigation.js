@@ -29,6 +29,8 @@ const Navigation = (props) => {
             <Link style={{margin:"20px 10px"}} to="/addedItems">Added Items</Link>
             <Link style={{margin:"20px 10px"}} to="/test">Test Page</Link>
             <Link style={{margin:"20px 10px"}} to="/contact">Contact</Link>
+            <Link style={{margin:"20px 10px"}} to="/user">User</Link>
+            <Link style={{margin:"20px 10px"}} to="/random">Random User</Link>
             <span style={{margin:"20px 10px",textDecoration:"underline"}}>State Value : {state}</span>
             <span style={{margin:"20px 10px",textDecoration:"underline"}}>Category Value: {category}</span>
         </div>

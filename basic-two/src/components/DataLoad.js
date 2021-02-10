@@ -119,7 +119,11 @@ const DataLoad = (props) => {
         
         {/* keys value are passing using props  */}
         <div>
+
+
             {/* shared components in multiple items */}
+            
+            {/* sending button ase props dot children rendering */}
             <Total keys={total}>
                 <Link to="/addedItems">
                     <button>
@@ -128,6 +132,8 @@ const DataLoad = (props) => {
                 </Link>
                 
             </Total>
+
+
         </div>
 
         <div>

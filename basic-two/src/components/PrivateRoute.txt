@@ -1,0 +1,42 @@
+App.js:
+
+<PrivateRoute path="/payment">
+   <Payment/>
+</PrivateRoute>
+
+
+PrivateRoute.js
+
+function PrivateRoute({ children, ...rest }) {
+      
+    const [user,setUser]=useContext(UserContext);
+    console.log(user);
+    let values=user;
+    return (
+      <Route
+        {...rest}
+        render={({ location }) =>
+          user.state ? ( //state is 
+            children
+          ) : (
+            <Redirect
+              to={{
+                pathname: "/login",
+                state: { from: location }
+              }}
+            />
+          )
+        }
+      />
+    );
+  }
+
+
+Login.js:
+
+const history = useHistory();
+const location = useLocation();
+const { from } = location.state || { from: { pathname: "/login" } };
+
+...
+history.replace(from);

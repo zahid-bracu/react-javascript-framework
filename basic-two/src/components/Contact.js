@@ -1,31 +1,42 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
+import {useHistory} from 'react-router-dom';
+
 
 const Contact = () => {
 
+    // conditional render & show
+    const [flag,setFlag]=useState(false)
+   
     // use->state with initial object & properties
-    const [user,setUser]=useState({
-        name:"",
-        email:""
-    })
+    const [user,setUser]=useState({})
+
+   
 
     function submitFunc(event){
 
         // prevent -> default to stop reload
         event.preventDefault();
-        console.log(user);
+        setFlag(!flag);
+         
     }
+
+
+    
+ 
 
     function handleChange(event){
         
 
         // event target name & value
         console.log(event.target.name+" : "+event.target.value);
-        if(event.target.name="name"){
-            user.name=event.target.value;
-        }
-        if(event.target.name="email"){
-            user.email=event.target.value;
-        }
+
+        // saving data with use-state
+        // loading old data
+        var info={...user}
+        
+        // saving in use-state
+        info[event.target.name]=event.target.value;
+        setUser(info);
     }
     
     return (
@@ -46,9 +57,22 @@ const Contact = () => {
 
 
                     <br/>
-                    <input type="submit" value="Submit" />
+                    <input type="submit" value='Submit & Show/Hide' />
                 </form>
+
+                {/* conditional show */}
+                {
+                    flag &&
+                    <>
+                    <h1>Name : {user.name}</h1>
+                    <h2>Email : {user.email}</h2>
+                    </>
+                }
             </div>
+
+                 
+ 
+            
         </div>
     );
 };
