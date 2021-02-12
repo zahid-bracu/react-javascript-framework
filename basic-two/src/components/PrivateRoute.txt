@@ -6,6 +6,19 @@ App.js:
 
 
 PrivateRoute.js
+--------------------------------------
+import React, {useContext} from 'react';
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link,
+    Redirect
+  } from "react-router-dom";
+  import {UserContext} from '../App';
+
+
+
 
 function PrivateRoute({ children, ...rest }) {
       
@@ -31,8 +44,18 @@ function PrivateRoute({ children, ...rest }) {
     );
   }
 
+##########################################
+
 
 Login.js:
+------------------------
+
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link, useHistory, useLocation
+  } from "react-router-dom";
 
 const history = useHistory();
 const location = useLocation();
