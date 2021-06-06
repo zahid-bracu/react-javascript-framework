@@ -1,11 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
-import './Component/File'
+import File from './Component/File'
+import React from 'react';
 function App() {
   return (
-    <div>
+    <React.Fragment>
       <File/>
-    </div>
+    </React.Fragment>
   );
 }
 
