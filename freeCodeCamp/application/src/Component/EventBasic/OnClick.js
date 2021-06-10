@@ -19,25 +19,21 @@ const OnClick = () => {
   <div>
    {
 
-    Data.map((value)=>{
-     return(
-      <>
-      <button onClick={checkInfo}><img  src={value.img} width='200' height='200'/></button>
-       
-       <div>
-        <h5>{value.title}</h5>
-         <h6>{value.author}</h6>
-         <button onClick={checkSimple}>Simple Click</button>
-        <button onClick={()=>checkDynamic(value.title)}>Dynamic Click</button>
-        <h5>{xy}</h5>
-       </div>
-      </>
-     )
-    })
+    Data.map(itr=> <ShowDetail key={itr.id} data={itr} /> )
 
    }
   </div>
  );
 };
+
+const ShowDetail=(props)=>{
+ return(
+  <>
+  <h5>{props.data.title}</h5>
+  <img src={props.data.img} width='200' height='200'/>
+  <h6>{props.data.author}</h6>
+  </>
+ )
+}
 
 export default OnClick;

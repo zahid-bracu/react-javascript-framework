@@ -5,9 +5,9 @@ const SimpleList = () => {
  return (
   <>
    {
-    array.map((key)=>{
+    array.map((key,index)=>{
      return(
-      <h3>Roll : {key}</h3>
+      <h3>Roll : {key} || {index}</h3>
      )
     })
    }

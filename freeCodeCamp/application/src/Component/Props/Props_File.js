@@ -35,7 +35,7 @@ const data=[
   <h2>List</h2>
   {/* 4 */}
   {
-    data.map(key=> <ObjectComponent info={key}/>)
+    data.map(itr=> <ObjectComponent key={itr.id} info={itr}/>)
   }
   
 

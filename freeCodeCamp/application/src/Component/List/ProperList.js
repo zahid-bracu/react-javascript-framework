@@ -8,7 +8,7 @@ const ProperList = () => {
     Data.map((book)=>{
      const {title,author,id,img}=book;
      return (
-      <DataShow key={id}  title={title} img={img} author={author}/>
+      <DataShow key={book.id}  title={title} img={img} author={author}/>
      )
     })
    }
@@ -18,7 +18,7 @@ const ProperList = () => {
 
 
 const DataShow=(props)=>{
- const {title,author,img,key}=props
+ const {title,author,img}=props
  return(
       <>
       <img src={img} width='200' />

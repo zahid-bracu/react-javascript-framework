@@ -8,6 +8,7 @@ import OnClick from './Component/EventBasic/OnClick';
 import ImportFile from './Component/Export_Import/ImportFile';
 import FileUseState from './Component/UseState/FileUseState';
 import ArrayState from './Component/UseState/ArrayState';
+import ObjectState from './Component/UseState/ObjectState';
 function App() {
   return (
     <React.Fragment>
@@ -19,6 +20,7 @@ function App() {
       <ImportFile/>
       <FileUseState/>
       <ArrayState/>
+      <ObjectState/>
     </React.Fragment>
   );
 }
