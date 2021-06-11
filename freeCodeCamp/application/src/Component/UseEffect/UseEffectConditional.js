@@ -23,3 +23,8 @@ const UseEffectConditional = () => {
 };
 
 export default UseEffectConditional;
+
+
+//প্রতি render এ load হয়]
+// ভিতরে condition দিয়ে রাখলে সেটা condtion wise render এর time এ execute হয়
+ 

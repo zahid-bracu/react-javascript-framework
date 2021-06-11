@@ -14,3 +14,6 @@ const UseEffectBasic = () => {
 };
 
 export default UseEffectBasic;
+
+// প্রতি render এ use effect load হয়
+//component এর কোন কিছু change হয়ে render হলে use effect load হয়

@@ -22,3 +22,5 @@ const UseEffectSecondParamsValue = () => {
 };
 
 export default UseEffectSecondParamsValue;
+
+// [] এর ভিতরে কোন value থাকলে সেই value যত বার change হবে use effect ততবার run হবে

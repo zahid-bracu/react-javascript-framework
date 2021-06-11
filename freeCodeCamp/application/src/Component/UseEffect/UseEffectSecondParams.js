@@ -19,3 +19,6 @@ const UseEffectSecondParams = () => {
 };
 
 export default UseEffectSecondParams;
+
+// use effect এর second parameter [] 
+// [] এর meaning initial render এর সময় শুধু মাত্র use effect run হবে

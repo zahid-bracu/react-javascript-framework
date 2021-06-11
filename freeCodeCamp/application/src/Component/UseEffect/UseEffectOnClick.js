@@ -20,3 +20,6 @@ const UseEffectOnClick = () => {
 };
 
 export default UseEffectOnClick;
+
+// use effect run করবে যখন use state এর কোন value event এর মাধ্যমে change হবে
+//
