@@ -17,3 +17,6 @@ const FileUseState = () => {
 };
 
 export default FileUseState;
+
+//use state
+// set item to another

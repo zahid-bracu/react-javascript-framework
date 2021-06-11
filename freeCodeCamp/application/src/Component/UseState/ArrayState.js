@@ -3,10 +3,12 @@ import {data} from './data';
 
 const ArrayState = () => {
  const [info,setInfo]=useState(data); // declare a use-state
+ 
  const removeItem=(value)=>{
   const restDatas=info.filter(key=> key.id!=value); // filter data
   setInfo(restDatas); // set rest data
  }
+ 
  return (
   <div>
    {
@@ -17,11 +19,7 @@ const ArrayState = () => {
  );
 };
 
-
-
-
-
-function ShowInfo(props){
+const ShowInfo=(props)=>{
  const {id,name}=props.info;
  return(
   <>
@@ -32,5 +30,9 @@ function ShowInfo(props){
  )
 }
 
-
 export default ArrayState;
+
+
+// use state array
+// one item remove using filter
+// all item clear

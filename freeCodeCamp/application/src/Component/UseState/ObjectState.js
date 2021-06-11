@@ -18,3 +18,6 @@ const ObjectState = () => {
 };
 
 export default ObjectState;
+
+// use State object - one element's value in object need to change
+// spread operator 
