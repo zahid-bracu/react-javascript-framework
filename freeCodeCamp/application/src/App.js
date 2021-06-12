@@ -9,9 +9,17 @@ import ImportFile from './Component/Export_Import/ImportFile';
 import FileUseState from './Component/UseState/FileUseState';
 import ArrayState from './Component/UseState/ArrayState';
 import ObjectState from './Component/UseState/ObjectState';
+import SimpleCount from './Component/UseState/SimpleCount';
+import UseEffectBasic from './Component/UseEffect/UseEffectBasic';
+import UseEffectOnClick from './Component/UseEffect/UseEffectOnClick';
+import UseEffectConditional from './Component/UseEffect/UseEffectConditional';
+import UseEffectSecondParams from './Component/UseEffect/UseEffectSecondParams';
+import UseEffectSecondParamsValue from './Component/UseEffect/UseEffectSecondParamsValue';
+import UseEffectCleanup from './Component/UseEffect/cleanup/UseEffectCleanup';
 function App() {
   return (
     <React.Fragment>
+      <div style={{display:"none"}}>
       <Props_File/>
       <Props_Children/>
       <SimpleList/>
@@ -21,6 +29,18 @@ function App() {
       <FileUseState/>
       <ArrayState/>
       <ObjectState/>
+      <SimpleCount/>
+      <UseEffectBasic/>
+      <UseEffectOnClick/>
+      <UseEffectConditional/>
+      <UseEffectSecondParams/>
+      <UseEffectSecondParamsValue/>
+      </div>
+      
+      
+      
+      
+      <UseEffectCleanup/>
     </React.Fragment>
   );
 }
