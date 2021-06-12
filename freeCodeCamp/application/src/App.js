@@ -16,6 +16,7 @@ import UseEffectConditional from './Component/UseEffect/UseEffectConditional';
 import UseEffectSecondParams from './Component/UseEffect/UseEffectSecondParams';
 import UseEffectSecondParamsValue from './Component/UseEffect/UseEffectSecondParamsValue';
 import UseEffectCleanup from './Component/UseEffect/cleanup/UseEffectCleanup';
+import UseEffectFetch from './Component/UseEffect/UseEffectFetch';
 function App() {
   return (
     <React.Fragment>
@@ -35,12 +36,13 @@ function App() {
       <UseEffectConditional/>
       <UseEffectSecondParams/>
       <UseEffectSecondParamsValue/>
+      <UseEffectCleanup/>
       </div>
       
       
       
+      <UseEffectFetch/>
       
-      <UseEffectCleanup/>
     </React.Fragment>
   );
 }
