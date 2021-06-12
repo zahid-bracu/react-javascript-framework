@@ -17,6 +17,8 @@ import UseEffectSecondParams from './Component/UseEffect/UseEffectSecondParams';
 import UseEffectSecondParamsValue from './Component/UseEffect/UseEffectSecondParamsValue';
 import UseEffectCleanup from './Component/UseEffect/cleanup/UseEffectCleanup';
 import UseEffectFetch from './Component/UseEffect/UseEffectFetch';
+import UseEffectMultipleReturns from './Component/UseEffect/UseEffectMultipleReturns';
+import ShortCircuit from './Component/Short_Circuit_Evaluation/ShortCircuit';
 function App() {
   return (
     <React.Fragment>
@@ -37,11 +39,13 @@ function App() {
       <UseEffectSecondParams/>
       <UseEffectSecondParamsValue/>
       <UseEffectCleanup/>
-      </div>
-      
-      
-      
       <UseEffectFetch/>
+      <UseEffectMultipleReturns/>
+      </div>
+      <ShortCircuit/>
+      
+      
+   
       
     </React.Fragment>
   );
