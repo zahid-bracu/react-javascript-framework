@@ -20,6 +20,9 @@ import UseEffectFetch from './Component/UseEffect/UseEffectFetch';
 import UseEffectMultipleReturns from './Component/UseEffect/UseEffectMultipleReturns';
 import ShortCircuit from './Component/Short_Circuit_Evaluation/ShortCircuit';
 import Component from './Component/Custom_Hook/Component';
+import NestedComponent from './Component/Nested_Component/NestedComponent';
+import Book_Project from './Component/Nested_Component/Mini_Book_Project/Book_Project';
+import JavaScript_jsx from './Component/JSX_Javascript/JavaScript_jsx';
 function App() {
   return (
     <React.Fragment>
@@ -43,9 +46,13 @@ function App() {
       <UseEffectFetch/>
       <UseEffectMultipleReturns/>
       <ShortCircuit/>
+      <Component/>  
+      <NestedComponent/>
+      <Book_Project/>
       </div>
       
-      <Component/>
+      <JavaScript_jsx/>
+      
       
       
    
