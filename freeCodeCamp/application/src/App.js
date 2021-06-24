@@ -23,6 +23,7 @@ import Component from './Component/Custom_Hook/Component';
 import NestedComponent from './Component/Nested_Component/NestedComponent';
 import Book_Project from './Component/Nested_Component/Mini_Book_Project/Book_Project';
 import JavaScript_jsx from './Component/JSX_Javascript/JavaScript_jsx';
+import FunctionalValueChange from './Component/UseState/FunctionalValueChange';
 function App() {
   return (
     <React.Fragment>
@@ -49,10 +50,11 @@ function App() {
       <Component/>  
       <NestedComponent/>
       <Book_Project/>
+      <JavaScript_jsx/>
       </div>
       
-      <JavaScript_jsx/>
       
+      <FunctionalValueChange/>
       
       
    
