@@ -10,6 +10,9 @@ const UseEffectFetch = () => {
   setData(infos);
  }
  
+
+
+//  as there is second params and it is an array so the useEffect function only load in initial page loading
  useEffect(()=>{
    fetchData();
  },[])

@@ -24,6 +24,11 @@ import NestedComponent from './Component/Nested_Component/NestedComponent';
 import Book_Project from './Component/Nested_Component/Mini_Book_Project/Book_Project';
 import JavaScript_jsx from './Component/JSX_Javascript/JavaScript_jsx';
 import FunctionalValueChange from './Component/UseState/FunctionalValueChange';
+import JSX_Short_Circuit from './Component/Short_Circuit_Evaluation/JSX_Short_Circuit';
+import TernaryOp from './Component/Ternary/TernaryOp';
+import ShowHide from './Component/Show_Hide/ShowHide'
+import OnBlur from './Component/React_Form/OnBlur';
+import OnChange from './Component/React_Form/OnChange';
 function App() {
   return (
     <React.Fragment>
@@ -46,17 +51,20 @@ function App() {
       <UseEffectCleanup/>
       <UseEffectFetch/>
       <UseEffectMultipleReturns/>
-      <ShortCircuit/>
       <Component/>  
       <NestedComponent/>
       <Book_Project/>
       <JavaScript_jsx/>
+      <FunctionalValueChange/>
+      <JSX_Short_Circuit/>
+      <ShortCircuit/>
+      <TernaryOp/>
+      <ShowHide/>
       </div>
       
+      <OnBlur/>
       
-      <FunctionalValueChange/>
-      
-      
+      <OnChange/>
    
       
     </React.Fragment>

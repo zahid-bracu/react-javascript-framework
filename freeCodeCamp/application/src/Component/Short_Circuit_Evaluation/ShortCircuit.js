@@ -4,6 +4,7 @@ const ShortCircuit = () => {
 const [value,setValue]=useState('');
 const message= value || 'value is not defined';
 const PrintMessage = value && `Defined value : ${value}`  ;
+const ErrorMessage = !value && `Value is not present`  ;
  return (
   <div>
    <h3>{message}</h3>

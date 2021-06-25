@@ -6,7 +6,7 @@ const UseEffectMultipleReturns = () => {
  const [isError,setError]=useState(false)
  const [user,setUser]=useState('default user')
 
- function getUser(){
+ const getUser=()=>{
   fetch(url).then(response=>{
    if(response.status>=200 & response.status<=299){
     return response.json()
@@ -21,7 +21,6 @@ const UseEffectMultipleReturns = () => {
    setUser(login);
   })
   .catch(err=>{
-   
    console.log(err)
   })
  }
