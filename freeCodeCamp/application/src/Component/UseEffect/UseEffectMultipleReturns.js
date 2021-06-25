@@ -16,7 +16,6 @@ const UseEffectMultipleReturns = () => {
    }
   })
   .then(result=>{
-   console.log(result);
    const {login}=result;
    setLoading(false);
    setUser(login);

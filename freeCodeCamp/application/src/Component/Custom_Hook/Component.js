@@ -1,9 +1,9 @@
 import React from 'react';
-import useFetch from './useFetch';
+import useFetch from './useFetch'; //importing the custom hooks file
 const Component = () => {
 const url='https://jsonplaceholder.typicode.com/users';
  
-const {isError,isLoading,user}=useFetch(url)
+const {isError,isLoading,user}=useFetch(url) // sending value to custom hook file and receiving multiple state value from that file
 
  if(isLoading){
   return(

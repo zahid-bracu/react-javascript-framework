@@ -1,6 +1,6 @@
 import React from 'react';
-import testFunc from './ExportFile';
-import {xy,info} from './ExportFile';
+import testFunc from './ExportFile'; //importing default function 
+import {xy,info} from './ExportFile'; // importing variable and array of object
 
 const ImportFile = () => {
  return (
