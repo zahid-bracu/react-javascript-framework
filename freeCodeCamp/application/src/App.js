@@ -29,6 +29,8 @@ import TernaryOp from './Component/Ternary/TernaryOp';
 import ShowHide from './Component/Show_Hide/ShowHide'
 import OnBlur from './Component/React_Form/OnBlur';
 import OnChange from './Component/React_Form/OnChange';
+import AddItem from './Component/React_Form/AddItem';
+import UseRefs from './Component/Use Ref/UseRefs';
 function App() {
   return (
     <React.Fragment>
@@ -60,11 +62,15 @@ function App() {
       <ShortCircuit/>
       <TernaryOp/>
       <ShowHide/>
+      <OnBlur/>
+      <OnChange/>
+      <AddItem/>
       </div>
       
-      <OnBlur/>
       
-      <OnChange/>
+      <UseRefs/>
+
+      
    
       
     </React.Fragment>
