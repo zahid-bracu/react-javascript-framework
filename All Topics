@@ -1,0 +1,37 @@
+JSX
+Components
+     -Functional Components
+     -Class Based Components
+Props
+Conditional Rendering
+Components LifeCycle
+List
+Keys
+Composition
+Inheritances
+Basic Hooks
+     -Use State
+     -Use Effect
+Hooks
+     -Use Call Back
+     -Use Ref
+     -Use Memo
+     -Use Reducer
+     -Use Context
+     -Custom Hooks
+Context API
+Refs
+Render Props
+Code Splitting
+High Order Components
+Portals
+Error Boundareis
+
+
+
+1. React Router (revise)
+2. Axios (revise)
+3. Context API (revise)
+4. Redux (revise)
+5. Styled Components (new)
+
