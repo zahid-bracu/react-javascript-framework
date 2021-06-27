@@ -31,8 +31,12 @@ import OnBlur from './Component/React_Form/OnBlur';
 import OnChange from './Component/React_Form/OnChange';
 import AddItem from './Component/React_Form/AddItem';
 import UseRefs from './Component/Use Ref/UseRefs';
+import UseReducerExam from './Component/Use_Reducer/UseReducerExam';
+import RestaurantContextProvider from './Component/context_api/RestaurantContextProvider';
+import Tester from './Component/context_api/Tester';
 function App() {
   return (
+    <RestaurantContextProvider>
     <React.Fragment>
       <div style={{display:"none"}}>
       <Props_File/>
@@ -65,15 +69,20 @@ function App() {
       <OnBlur/>
       <OnChange/>
       <AddItem/>
-      </div>
-      
-      
       <UseRefs/>
+      <UseReducerExam/>
+      </div>
+
+      <Tester/>
+      
+      
+      
 
       
    
       
     </React.Fragment>
+    </RestaurantContextProvider>
   );
 }
 
