@@ -34,6 +34,7 @@ import UseRefs from './Component/Use Ref/UseRefs';
 import UseReducerExam from './Component/Use_Reducer/UseReducerExam';
 import RestaurantContextProvider from './Component/context_api/RestaurantContextProvider';
 import Tester from './Component/context_api/Tester';
+import UseReducerPayload from './Component/Use_Reducer/UseReducerPayload';
 function App() {
   return (
     <RestaurantContextProvider>
@@ -71,9 +72,12 @@ function App() {
       <AddItem/>
       <UseRefs/>
       <UseReducerExam/>
+      <Tester/>
       </div>
 
-      <Tester/>
+
+      <UseReducerPayload/>
+      
       
       
       
