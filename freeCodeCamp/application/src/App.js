@@ -35,6 +35,7 @@ import UseReducerExam from './Component/Use_Reducer/UseReducerExam';
 import RestaurantContextProvider from './Component/context_api/RestaurantContextProvider';
 import Tester from './Component/context_api/Tester';
 import UseReducerPayload from './Component/Use_Reducer/UseReducerPayload';
+import PropsTypeExam from './Component/PropsType/PropsTypeExam';
 function App() {
   return (
     <RestaurantContextProvider>
@@ -73,10 +74,13 @@ function App() {
       <UseRefs/>
       <UseReducerExam/>
       <Tester/>
+      <UseReducerPayload/>
       </div>
 
 
-      <UseReducerPayload/>
+      <PropsTypeExam/>
+
+      
       
       
       

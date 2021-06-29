@@ -1,37 +1,24 @@
-JSX
-Components
-     -Functional Components
-     -Class Based Components
-Props
-Conditional Rendering
+-Class Based Components
+Conditional Rendering - jhankar 2020 notes
 Components LifeCycle
-List
-Keys
-Composition
-Inheritances
-Basic Hooks
-     -Use State
-     -Use Effect
-Hooks
-     -Use Call Back
-     -Use Ref
-     -Use Memo
-     -Use Reducer
-     -Use Context
-     -Custom Hooks
-Context API
+ 
+Composition - learn with sumit 
+Inheritances - learn with sumit
+-Use Call Back -free
+-Use Memo -free
 Refs
 Render Props
+PropsType
 Code Splitting
 High Order Components
 Portals
 Error Boundareis
+Fiber Architecture
 
 
 
 1. React Router (revise)
 2. Axios (revise)
-3. Context API (revise)
 4. Redux (revise)
 5. Styled Components (new)
 
