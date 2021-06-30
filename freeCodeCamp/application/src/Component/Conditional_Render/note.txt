@@ -1,0 +1,75 @@
+
+1.
+{user.state ? (<Nav.Link  >
+                <Link to="/login">
+                    Logout
+                </Link>    
+            </Nav.Link>) 
+                   :
+            (<Nav.Link  >
+                <Link to="/login">
+                    Login
+                </Link>    
+            </Nav.Link>)
+            }
+
+
+****************************************************
+
+2. { user.state && <h1>Creep</h1>}
+
+******************************************************
+
+3.
+let display
+if(flag)
+{
+	display= <p>Hello</p>
+}else
+{
+	display= <p>Bye</p>
+}
+
+return(
+	{display}
+)
+
+*************************************************************
+
+4. const display = flag ? <p>Hi</p> : <p>By</p>
+
+*************************************************************
+
+
+5. const display = num>5 ? <p>Hi</p> : <p>By</p> 
+
+*************************************************************
+
+
+6.conditional formatting
+
+parent component:-->
+<Child alter={true}> </Child>
+
+
+inside Child.js:--->
+const {alter}=props;
+
+{
+	alter && <button> Show </button>
+}
+
+-------------------------------------------------
+
+another parent component:--->
+<Child alter={false}></Child>
+
+
+inside Child.js:--->
+const {alter}=props;
+
+{
+	!alter && <button> Hide </button>
+}
+
+
