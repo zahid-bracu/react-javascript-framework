@@ -1,7 +1,10 @@
 import React, {useState, createContext} from 'react';
 
+// creating the restaurant context
 export const RestaurantContext=createContext();
  
+
+// context provider 
 const RestaurantContextProvider=(props)=>{
  const [restaurants,setRestautants]=useState([]);
 

@@ -38,6 +38,7 @@ import UseReducerPayload from './Component/Use_Reducer/UseReducerPayload';
 import PropsTypeExam from './Component/PropsType/PropsTypeExam';
 import ReactMemoExam from './Component/React_Memo/ReactMemoExam';
 import UseMemoExam from './Component/Use_Memo/UseMemoExam';
+import UseCallBackExam from './Component/Use_CallBack/UseCallBackExam';
 function App() {
   return (
     <RestaurantContextProvider>
@@ -79,9 +80,12 @@ function App() {
       <UseReducerPayload/>
       <PropsTypeExam/>
       <ReactMemoExam/>
+      <UseMemoExam/>
       </div>
 
-      <UseMemoExam/>
+
+      <UseCallBackExam/>
+      
       
       
 
