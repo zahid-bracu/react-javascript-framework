@@ -36,6 +36,8 @@ import RestaurantContextProvider from './Component/context_api/RestaurantContext
 import Tester from './Component/context_api/Tester';
 import UseReducerPayload from './Component/Use_Reducer/UseReducerPayload';
 import PropsTypeExam from './Component/PropsType/PropsTypeExam';
+import ReactMemoExam from './Component/React_Memo/ReactMemoExam';
+import UseMemoExam from './Component/Use_Memo/UseMemoExam';
 function App() {
   return (
     <RestaurantContextProvider>
@@ -75,10 +77,13 @@ function App() {
       <UseReducerExam/>
       <Tester/>
       <UseReducerPayload/>
+      <PropsTypeExam/>
+      <ReactMemoExam/>
       </div>
 
-
-      <PropsTypeExam/>
+      <UseMemoExam/>
+      
+      
 
       
       
