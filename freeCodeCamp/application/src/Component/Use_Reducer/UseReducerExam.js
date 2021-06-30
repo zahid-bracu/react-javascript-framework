@@ -3,7 +3,7 @@ import React, {useReducer} from 'react';
 const initialState=10;
 
 const reducer=(state,action)=>{
- console.log(state, action);
+ 
  if(action.type=='INCREMENT'){
   state=state+1;
   return state;
