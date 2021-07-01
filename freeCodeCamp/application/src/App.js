@@ -32,13 +32,14 @@ import OnChange from './Component/React_Form/OnChange';
 import AddItem from './Component/React_Form/AddItem';
 import UseRefs from './Component/Use Ref/UseRefs';
 import UseReducerExam from './Component/Use_Reducer/UseReducerExam';
-import RestaurantContextProvider from './Component/context_api/RestaurantContextProvider';
-import Tester from './Component/context_api/Tester';
+import RestaurantContextProvider from './Component/Context_api/RestaurantContextProvider';
+import Tester from './Component/Context_api/Tester';
 import UseReducerPayload from './Component/Use_Reducer/UseReducerPayload';
 import PropsTypeExam from './Component/PropsType/PropsTypeExam';
 import ReactMemoExam from './Component/React_Memo/ReactMemoExam';
 import UseMemoExam from './Component/Use_Memo/UseMemoExam';
 import UseCallBackExam from './Component/Use_CallBack/UseCallBackExam';
+import HOCExam from './Component/Higher_Order_Component/HOCExam';
 function App() {
   return (
     <RestaurantContextProvider>
@@ -81,10 +82,12 @@ function App() {
       <PropsTypeExam/>
       <ReactMemoExam/>
       <UseMemoExam/>
+      <UseCallBackExam/>
       </div>
 
 
-      <UseCallBackExam/>
+      <HOCExam/>
+      
       
       
       
