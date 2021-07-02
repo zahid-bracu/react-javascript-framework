@@ -1,24 +1,23 @@
 -Class Based Components
-Conditional Rendering - jhankar 2020 notes
-Components LifeCycle
- 
+-Components LifeCycle
+
 Composition - learn with sumit 
 Inheritances - learn with sumit
--Use Call Back -free
--Use Memo -free
-Refs
-Render Props
-PropsType
+
 Code Splitting
-High Order Components
+High Order Components****
+Render Props
 Portals
 Error Boundareis
 Fiber Architecture
+useCallback - Fetch
+
+Redux
+Zustand
 
 
-
-1. React Router (revise)
+1. React Router*** (revise)
 2. Axios (revise)
-4. Redux (revise)
+4. Redux & Zustand*** (revise)
 5. Styled Components (new)
 

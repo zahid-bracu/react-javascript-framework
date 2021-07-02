@@ -19,6 +19,7 @@ Hooks
      -Use Reducer
      -Use Context
      -Custom Hooks
+React Memo
 Context API
 Refs
 PropsType

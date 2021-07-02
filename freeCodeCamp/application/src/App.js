@@ -43,6 +43,7 @@ import HOCExam from './Component/Higher_Order_Component/HOCExam';
 function App() {
   return (
     <RestaurantContextProvider>
+      <h1 style={{textAlign:'center'}}>React Testing</h1>
     <React.Fragment>
       <div style={{display:"none"}}>
       <Props_File/>
@@ -83,24 +84,8 @@ function App() {
       <ReactMemoExam/>
       <UseMemoExam/>
       <UseCallBackExam/>
-      </div>
-
-
       <HOCExam/>
-      
-      
-      
-      
-
-      
-      
-      
-      
-      
-
-      
-   
-      
+      </div>
     </React.Fragment>
     </RestaurantContextProvider>
   );

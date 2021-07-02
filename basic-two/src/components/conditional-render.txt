@@ -1,16 +1,17 @@
 
 1.
-{user.state ? <Nav.Link  >
+{user.state ? (<Nav.Link  >
                 <Link to="/login">
                     Logout
                 </Link>    
-            </Nav.Link> 
+            </Nav.Link>) 
                    :
-            <Nav.Link  >
+            (<Nav.Link  >
                 <Link to="/login">
                     Login
                 </Link>    
-            </Nav.Link>}
+            </Nav.Link>)
+            }
 
 
 ****************************************************
