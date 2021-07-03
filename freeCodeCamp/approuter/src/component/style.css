@@ -1,0 +1,13 @@
+ul{
+ list-style: none;
+}
+
+ul li{
+ display: inline;
+ text-decoration: none !important;
+ padding: 1em;
+}
+
+.Link{
+ text-decoration: none;
+}

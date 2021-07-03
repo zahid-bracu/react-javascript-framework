@@ -1,5 +1,6 @@
 import React, {useReducer} from 'react';
 import makeid from '../stringGenerator';
+
 const initialState={
  array:[],
  value:0
@@ -7,14 +8,14 @@ const initialState={
 
 
 const reducer=( state, action)=>{
- console.log(state,action);
+
  if(action.type=='Add'){
   const temp=[...state.array,action.payload];
   const tempValue=state.value+1;
   return {array:temp,value:tempValue};
  }
 
- if(action.type=='Remove'){
+ else if(action.type=='Remove'){
   const temp=state.array.filter((key)=>{
    return key!==action.payload
   })
