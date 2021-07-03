@@ -10,6 +10,7 @@ import {
   Route
 } from "react-router-dom";
 import NotFound from './component/NotFound';
+import Post from './component/Post';
 function App() {
   return (
     <>
@@ -21,6 +22,7 @@ function App() {
       <Route path='/aboutme' component={AboutMe} />
       <Route path='/profile' component={Profile} />
       <Route path='/random' component={Random} />
+      <Route path='/post/:id' component={Post} />
       <Route  component={NotFound} />
     </Switch>
     </BrowserRouter>
