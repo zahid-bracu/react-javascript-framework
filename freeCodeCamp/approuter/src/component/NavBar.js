@@ -19,6 +19,7 @@ const NavBar = () => {
     <li><Link className="Link" to={`/paramsmatch/${string}`}>Params Match  </Link></li>
     <li><Link className="Link" to={`/useparams/${string}`}>Use Param  </Link></li>
     <li><Link className="Link" to={`/uselocation/${string}`}>Use Location  </Link></li>
+    <li><Link className="Link" to='/secret'>Secret  </Link></li>
    </ul>
   </div>
  );

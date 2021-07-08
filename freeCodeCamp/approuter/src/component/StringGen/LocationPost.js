@@ -12,6 +12,8 @@ const LocationPost = ({match}) => {
   <div>
    <h1>Use Location</h1>
    <h1>Params ID : {match.params.id}</h1>
+   <h1>First Name : {query.get('first')}</h1>
+   <h1>Last Name : {query.get('last')}</h1>
   </div>
  );
 };
