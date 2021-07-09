@@ -14,7 +14,7 @@ import Login from './component/Login';
 import LoginFirst from './component/LoginFirst';
 import Secret from './component/Secret';
 
-
+// main component
 function App() {
   const[loggedIn,setLoggedIn]=useState(false);
 
