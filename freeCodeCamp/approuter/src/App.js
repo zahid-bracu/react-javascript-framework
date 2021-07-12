@@ -40,6 +40,8 @@ function App() {
       </Route>
 
 
+
+      {/* redirect route also */}
       <Route path='/secret' >
       <Secret loggedIn={loggedIn}/>
       </Route>
