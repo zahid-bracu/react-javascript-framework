@@ -1,7 +1,10 @@
 import React, {useReducer} from 'react';
 
+// state declare
 const initialState=10;
 
+
+// reducer function
 const reducer=(state,action)=>{
  
  if(action.type=='INCREMENT'){
@@ -16,7 +19,9 @@ const reducer=(state,action)=>{
 
 
 const UseReducerExam = () => {
- const [state,dispatch]=useReducer(reducer,initialState)
+    // use Reducer
+    const [state,dispatch]=useReducer(reducer,initialState)
+ 
  return (
   <>
    <h4>Use Reducer</h4>

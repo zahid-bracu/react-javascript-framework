@@ -1,12 +1,14 @@
 import React, {useReducer} from 'react';
 import makeid from '../stringGenerator';
 
+// initial State
 const initialState={
  array:[],
  value:0
 }
 
 
+// reducer Function
 const reducer=( state, action)=>{
 
  if(action.type=='Add'){
