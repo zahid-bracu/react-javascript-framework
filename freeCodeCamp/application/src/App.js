@@ -40,13 +40,14 @@ import ReactMemoExam from './Component/React_Memo/ReactMemoExam';
 import UseMemoExam from './Component/Use_Memo/UseMemoExam';
 import UseCallBackExam from './Component/Use_CallBack/UseCallBackExam';
 import HOCExam from './Component/Higher_Order_Component/HOCExam';
+import ParentHandle from './Component/Use_Imperative_Handle/ParentHandle';
 function App() {
   return (
     <RestaurantContextProvider>
       <h1 style={{textAlign:'center'}}>React Testing</h1>
     <React.Fragment>
       <div style={{display:"none"}}>
-      <Props_File/>
+      {/* <Props_File/>
       <Props_Children/>
       <SimpleList/>
       <ProperList/>
@@ -84,8 +85,10 @@ function App() {
       <ReactMemoExam/>
       <UseMemoExam/>
       <UseCallBackExam/>
-      <HOCExam/>
+      <HOCExam/> */}
       </div>
+
+      <ParentHandle/>
     </React.Fragment>
     </RestaurantContextProvider>
   );
