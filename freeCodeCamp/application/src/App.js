@@ -90,9 +90,12 @@ function App() {
       <HOCExam/> 
       <ParentHandle/>
       <MainHomeLazyLoad/>
+      <CodeSplitExam/>
       */}
       </div>
-      <CodeSplitExam/>
+
+      <HOCExam/>
+      
       
 
       
