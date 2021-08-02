@@ -41,6 +41,8 @@ import UseMemoExam from './Component/Use_Memo/UseMemoExam';
 import UseCallBackExam from './Component/Use_CallBack/UseCallBackExam';
 import HOCExam from './Component/Higher_Order_Component/HOCExam';
 import ParentHandle from './Component/Use_Imperative_Handle/ParentHandle';
+import MainHomeLazyLoad from './Component/Lazy_Loading/MainHomeLazyLoad';
+import CodeSplitExam from './Component/Code_Splitting/CodeSplitExam';
 function App() {
   return (
     <RestaurantContextProvider>
@@ -85,10 +87,15 @@ function App() {
       <ReactMemoExam/>
       <UseMemoExam/>
       <UseCallBackExam/>
-      <HOCExam/> */}
-      </div>
-
+      <HOCExam/> 
       <ParentHandle/>
+      <MainHomeLazyLoad/>
+      */}
+      </div>
+      <CodeSplitExam/>
+      
+
+      
     </React.Fragment>
     </RestaurantContextProvider>
   );
